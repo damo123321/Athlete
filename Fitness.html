@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fitness.css">
+
+</head>
+
+<body>
+
+<!-- Hero Page-->
+<section class="hero" id="home-section"> 
+    <video autoplay loop muted playsinline class="hero-video">
+        <source src="Go the Distance with Stock Video_ A Training Montage Made from 100% Stock Footage.mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="underline">ATHLETE</h1>
+        <p>FITNESS INFORMATION AT YOUR FINGERTIPS</p>
+
+    <!-- hamburger -->
+        <div class="hamburger" id="hamburger">
+            <div class="line-h"></div>
+            <div class="line-h"></div>
+            <div class="line-h"></div>
+        </div>
+
+        <nav class="full-page-menu" id="full-page-menu">
+            <div class="menu-option" id="home">
+                <div class="circle"></div>
+                <h3>Home</h3>
+            </div>
+            <div class="menu-option" id="fitness">
+                <div class="circle"></div>
+                <h3>Fitness</h3>
+            </div>
+            <div class="menu-option" id="about">
+                <div class="circle"></div>
+                <h3>About</h3>
+            </div>
+        </nav>
+    </div>
+</section>
+
+
+<!-- Fitness Page -->
+<section class="fitness" id="fitness-section">
+    <img src="medium-shot-woman-with-personal-trainer.jpg" alt="hero-image" class="hero-image">
+    <div class="fitness-content">
+        <h2 class="underline">FITNESS</h2>
+        <p>EXPLORE OUR WIDE RANGE OF FITNESS INFORMATION</p>
+        <button class="explore">EXPLORE</button>
+    </div>
+</section>
+
+<!-- About Page -->
+<section class="about-page" id="about-section">
+    <div class="about">
+        <h3 class="about-heading">ABOUT</h3>
+        <p class="about-information">ATHLETE was founded in 2024 with the goal to help people acquire no BS knowledge about fitness. You can find all your fitness information here with full reliability.</p>
+    </div>
+    <div class="line"></div>
+</section>
+
+
+<script src="fitness.js"></script>
+
+
+<!-- Explore Section -->
+<section class="explore-section" id="explore-section" style="display: none;">
+    <div class="explore-content">
+        <h2>EXPLORE</h2>
+        <p id="explore-info">WEIGHT LIFTING</p>
+
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="very-power-athletic-guy-bodybuilder-execute-exercise-with-dumbbells-dark-gym-muscular-man-part-body.jpg" alt="Image 1" class="carousel-image">
+                <img src="muscular-build-man-lifting-barbell-strength-training-gym.jpg" alt="Image 2" class="carousel-image">
+                <img src="strong-tattooed-athlete-shows-how-calisthenic-moves-step-by-step-full-leg-rises-pull-bar-medium-position.jpg" alt="Image 3" class="carousel-image">
+            </div>
+            
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <button class="explore" id="carousel-explore-button">EXPLORE</button>
+
+    </div>
+</section>
+
+<audio id="hover-sound" src="click-buttons-ui-menu-sounds-effects-button-14-205402.mp3" preload="auto"></audio>
+
+   
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+</body>
+</html>

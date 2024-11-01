@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    overflow-x: hidden;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.underline{
+    display: inline-block;
+    border-bottom: 5px solid white;
+    padding-bottom: 0.5px;
+    color: white;
+    transition: color 0.3 ease;
+    cursor: pointer;
+}
+
+.underline:hover {
+    color: #364D8A;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 8em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1em;
+    font-family: "Bebas Neue";
+    margin-bottom: 1em;
+    margin-top: -50px;
+    
+}
+
+
+
+/* HAMBURGER */
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+    position: fixed; 
+    top: 20px; 
+    right: 40px;
+    z-index: 3; 
+}
+
+
+.hamburger:hover{
+    background-color: #364D8A;
+}
+
+.line-h {
+    width: 100%; 
+    height: 3px; 
+    background-color: white; 
+    border-radius: 5px; 
+    transition: all 0.3s; 
+}
+
+
+
+.full-page-menu {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.95); 
+    z-index: 2; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    transition: opacity 0.3s ease; 
+    opacity: 0; }
+
+.full-page-menu.active {
+    display: flex; 
+    opacity: 1; 
+}
+
+.menu-option {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: absolute; 
+}
+
+#home {
+    top: 20%; 
+    left: 20%; 
+}
+
+#fitness {
+    top: 20%; 
+    right: 20%; 
+}
+
+#about {
+    bottom: 20%; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.circle {
+    width: 80px; 
+    height: 80px; 
+    background-color: white; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+    transition: transform 0.3s; 
+}
+
+.circle:hover {
+    transform: scale(1.3); 
+    background-color: #364D8A;
+}
+
+.circle:hover + h3 {
+    color: #364D8A;
+}
+
+.menu-option h3 {
+    color: white; 
+    font-size: 1.5em; 
+    text-align: center; 
+}
+
+
+
+
+/* FITNESS SECTION */
+
+.fitness {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.fitness-content {
+    position: relative;
+    z-index: 2;
+}
+
+.fitness-content h2 {
+    font-size: 8em;
+    margin-bottom: 0.5em;
+}
+
+.fitness-content p {
+    font-size: 1em;
+    font-family: "Bebas Neue";
+    margin-bottom: 1em;
+    margin-top: -50px;
+    
+}
+
+.explore{
+    padding: 10px 30px;
+    font-size: 1em;
+    font-family: "Bebas Neue";
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.explore:hover{
+    background-color: #364D8A;
+    color: black;
+    border: 0px;
+}
+
+
+
+/* About */
+
+.about-page{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color:#262626;
+    background-size: cover;
+}
+
+.line {
+    position: absolute; 
+    left: 50%; 
+    top: 25%; 
+    height: 50%; 
+    width: 5px; 
+    background-color: #fff; 
+    transform: translateX(-50%); 
+    z-index: 1;
+}
+
+.about-heading{
+    margin-bottom: 80%;
+    font-size: 50px;
+}
+
+.about-information{
+    color: #364D8A;
+}
+
+
+/* Explore Section */
+.explore-section {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.carousel{
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    min-width: 100%;
+    height: auto;
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    transform: translateY(-50%);
+    z-index: 5;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #364D8A;
+}
+
+
+#explore-info{
+    color: #364D8A;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+h2{
+   font-size:  50px;
+}
+
+#carousel-explore-button{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
